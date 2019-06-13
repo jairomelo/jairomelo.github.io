@@ -39,18 +39,18 @@
 	function onEachFeature(feature, layer) {
     // ¿Hay datos en denominación actual y en otros nombres?
     if (feature.properties.Otros_nombres != "" && feature.properties.Denominación_actual != "") {
-     	layer.bindPopup("<b>Topónimo: </b>" + feature.properties.Topónimo + " <br /> <b>Tipo: </b>" + feature.properties.Tipo + " <br /> <b>Jurisdicción: </b>" + feature.properties.Jurisdicción + " <br /> <b>También conocido como: </b> " + feature.properties.Otros_nombres + " <br /> <b>Denominación actual: </b> " + feature.properties.Denominación_actual);
+     	layer.bindPopup("<b>Topónimo: </b>" + feature.properties.Topónimo + " <br /> <b>Tipo: </b>" + feature.properties.Tipo + " <br /> <b>Jurisdicción: </b>" + feature.properties.Jurisdicción + " <br /> <b>También conocido como: </b> " + feature.properties.Otros_nombres + " <br /> <b>Denominación actual: </b> " + feature.properties.Denominación_actual + " <br /> <b>Coordenadas [lat-long]:</b> <br />" + feature.geometry.coordinates);
      }
     // ¿Hay datos en Otros nombres pero no en denominación_actual?
     else if (feature.properties.Otros_nombres != "") {
-        layer.bindPopup("<b>Topónimo: </b>" + feature.properties.Topónimo + " <br /> <b>Tipo: </b>" + feature.properties.Tipo + " <br /> <b>Jurisdicción: </b>" + feature.properties.Jurisdicción + " <br /> <b>También conocido como: </b> " + feature.properties.Otros_nombres);
+        layer.bindPopup("<b>Topónimo: </b>" + feature.properties.Topónimo + " <br /> <b>Tipo: </b>" + feature.properties.Tipo + " <br /> <b>Jurisdicción: </b>" + feature.properties.Jurisdicción + " <br /> <b>También conocido como: </b> " + feature.properties.Otros_nombres + " <br /> <b>Coordenadas [lat-long]:</b> <br />" + feature.geometry.coordinates);
     }
     // ¿Hay datos en denominación actual pero no en otros nombres?
     else if (feature.properties.Denominación_actual != "") {
-         layer.bindPopup("<b>Topónimo: </b>" + feature.properties.Topónimo + " <br /> <b>Tipo: </b>" + feature.properties.Tipo + " <br /> <b>Jurisdicción: </b>" + feature.properties.Jurisdicción + " <br /> <b>Denominación actual: </b> " + feature.properties.Denominación_actual);
+         layer.bindPopup("<b>Topónimo: </b>" + feature.properties.Topónimo + " <br /> <b>Tipo: </b>" + feature.properties.Tipo + " <br /> <b>Jurisdicción: </b>" + feature.properties.Jurisdicción + " <br /> <b>Denominación actual: </b> " + feature.properties.Denominación_actual + " <br /> <b>Coordenadas [lat-long]:</b> <br />" + feature.geometry.coordinates);
      }
     else {
-    	layer.bindPopup("<b>Topónimo: </b>" + feature.properties.Topónimo + " <br /> <b>Tipo: </b>" + feature.properties.Tipo + " <br /> <b>Jurisdicción: </b>" + feature.properties.Jurisdicción)
+    	layer.bindPopup("<b>Topónimo: </b>" + feature.properties.Topónimo + " <br /> <b>Tipo: </b>" + feature.properties.Tipo + " <br /> <b>Jurisdicción: </b>" + feature.properties.Jurisdicción + " <br /> <b>Coordenadas [lat-long]:</b> <br />" + feature.geometry.coordinates);
     }
 }
 
