@@ -68,11 +68,23 @@
 		id: 'mapbox.light'
 	}).addTo(map);
 
+// Condicional para evitar mostrar campos vacíos en otras denominaciones y en denominación actual
 
 	function onEachFeature(feature, layer) {
-    // does this feature have a property named popupContent?
-    if (feature.properties && feature.properties.Nombre) {
-        layer.bindPopup(feature.properties.Nombre);
+    // ¿Hay datos en denominación actual y en otros nombres?
+    if (feature.properties.Otros_nombres != "" && feature.properties.Denominación_actual != "") {
+     	layer.bindPopup("<b>Topónimo: </b>" + feature.properties.Topónimo + " <br /> <b>Tipo: </b>" + feature.properties.Tipo + " <br /> <b>Jurisdicción: </b>" + feature.properties.Jurisdicción + " <br /> <b>También conocido como: </b> " + feature.properties.Otros_nombres + " <br /> <b>Denominación actual: </b> " + feature.properties.Denominación_actual);
+     }
+    // ¿Hay datos en Otros nombres pero no en denominación_actual?
+    else if (feature.properties.Otros_nombres != "") {
+        layer.bindPopup("<b>Topónimo: </b>" + feature.properties.Topónimo + " <br /> <b>Tipo: </b>" + feature.properties.Tipo + " <br /> <b>Jurisdicción: </b>" + feature.properties.Jurisdicción + " <br /> <b>También conocido como: </b> " + feature.properties.Otros_nombres);
+    }
+    // ¿Hay datos en denominación actual pero no en otros nombres?
+    else if (feature.properties.Denominación_actual != "") {
+         layer.bindPopup("<b>Topónimo: </b>" + feature.properties.Topónimo + " <br /> <b>Tipo: </b>" + feature.properties.Tipo + " <br /> <b>Jurisdicción: </b>" + feature.properties.Jurisdicción + " <br /> <b>Denominación actual: </b> " + feature.properties.Denominación_actual);
+     }
+    else {
+    	layer.bindPopup("<b>Topónimo: </b>" + feature.properties.Topónimo + " <br /> <b>Tipo: </b>" + feature.properties.Tipo + " <br /> <b>Jurisdicción: </b>" + feature.properties.Jurisdicción)
     }
 }
 
