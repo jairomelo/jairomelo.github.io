@@ -1,63 +1,305 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
+
 <head>
-	<meta charset="UTF-8">
-
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-
-	<link href="stilo/site.css" rel="stylesheet" type="text/css" />
-	<script src="script/site.js" type="text/javascript"></script>
-
-	<title>>>JAMF >> Página personal <<</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Jairo A. Melo F.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Historiador del poder judicial y político - historiador y humanista digital" />
+    <meta name="author" content="Jairo Antonio Melo Flórez" />
+    <!-- Twitter integration -->
+    <meta name="twitter:title" content="@jairoamelo" />
+    <meta name="twitter:image" content="images/about.jpg" />
+    <meta name="twitter:url" content="https://twitter.com/jairoamelo" />
+    <meta name="twitter:card" content="summary" />
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="css/style_min.css">
+    <!-- Modernizr JS -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+    <!-- javascript para recuperar el RSS del blog hypotheses -->
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/FeedEk.min.js"></script>
+    <!-- Logos académicons -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
 </head>
-<body class="app header-fixed">
-	<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-		<a class="navbar-brand" href="index.html">JAMF</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
 
-		<div class="collapse navbar-collapse" id="navbarsExampleDefault">
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item active">
-					<a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="mapa.html">Mapa</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="https://github.com/jairomelo" target="_blank">Github</a>
-				</li>
-			</ul>
-		</div>
-	</nav>
+<body>
+    <div id="colorlib-page">
+        <div class="container-wrap">
+            <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+            <aside id="colorlib-aside" role="complementary" class="border js-fullheight">
+                <div class="text-center">
+                    <div class="author-img" style="background-image: url(images/about.jpg);"></div>
+                    <h1 id="colorlib-logo"><a href="#" data-nav-section="about">Jairo A. Melo F.</a></h1>
+                    <span class="position"><b>Historiador | Humanista digital</b></span>
+                </div>
+                <ul class="colorlib-social">
+                    <li><a href="mailto:jairom@colmich.edu.mx" target="_blank"><i class="fas fa-envelope"></i></a></li>
+                    <li><a href="https://twitter.com/jairoamelo" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://scholar.google.com/citations?user=AIoXcs4AAAAJ&hl=en" target="_blank"><i class="ai ai-google-scholar"></i></a></li>
+                    <li><a href="https://github.com/jairomelo/" target="_blank"><i class="fab fa-github"></i></a></li>
+                    <li><a href="https://orcid.org/0000-0002-2020-1163" target="_blank"><i class="ai ai-orcid"></i></a></li>
+                    <li><a href="files/CV_JAMF_short_.pdf" target="_blank"><i class="ai ai-cv"></i></a></li>
+                </ul>
+                <nav id="colorlib-main-menu" role="navigation" class="navbar">
+                    <div id="navbar" class="collapse">
+                        <ul>
+                            <li class="active"><a href="#" data-nav-section="about">Inicio</a></li>
+                            <li><a href="#" data-nav-section="education">Educación</a></li>
+                            <li><a href="#" data-nav-section="publicaciones">Publicaciones</a></li>
+                            <li><a href="#" data-nav-section="blog">Blog</a></li>
+                            <li><a href="#" data-nav-section="contact">Contacto</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="colorlib-footer">
+                    <p><small>
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            Este sitio se realizó con base en una plantilla de &copy; <a href="https://colorlib.com/wp/template/jackson/" target="_blank">Colorlib</a> | Template is licensed under <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0.</a> </span> <span>Academic icons by: <a href="https://jpswalsh.github.io/academicons/" target="_blank">Academicons</a></span></small></p>
+                </div>
+            </aside>
+            <div id="colorlib-main">
+            	<div class="idiomas" data-animate-effect="fadeInLeft">
+            		<a href="index.html">[ES]</a> <a href="#">[ENG]</a>
+            	</div>
+                <section class="colorlib-about" data-section="about">
+                    <div class="colorlib-narrow-content">
+                        <div class="row">
+                            <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+                                <div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+                                        <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+                                <span class="heading-meta">&nbsp;</span>
+                                <h2 class="colorlib-heading animate-box">Acerca de mi</h2>
+                            			</div>
+                            	</div>
+                            </div>
+                        </div>
+                            <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
 
-	<main role="main" class="container">
+                                            <p>Soy <strong>Jairo Antonio Melo Flórez</strong>, historiador y "humanista digital", actualmente en vísperas de defender mi tesis doctoral sobre el uso del perdón en la justicia y el gobierno de la monarquía hispánica.</p>
+                                            <p>Me especializo en la historia social y cultural del derecho y del crimen entre inicios del siglo XVIII hasta mediados del XX, con particular interés en el ámbito de "Tierra Firme" y la nación colombiana.</p>
+                                            <p>También estoy en permanente exploración de métodos, técnicas y teorías asociadas con las humanidades digitales en relación con la investigación histórica; un campo que bien podría denominarse como "historia digital" o "historia computacional". En este momento me enfoco en la aplicación de la ciencia de datos y <em>machine learning</em> para el análisis de fuentes históricas en general y del derecho en particular.</p>
+                                        </div>
+                    </div>
+                </section>
+                <section class="colorlib-education" data-section="education">
+                    <div class="colorlib-narrow-content">
+                        <div class="row">
+                            <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+                                <span class="heading-meta">&nbsp;</span>
+                                <h2 class="colorlib-heading animate-box">Educación</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+                                <ul class="fa-ul">
+                                    <li><i class="fa-li fas fa-graduation-cap"></i>
+                                        <div class="description">
+                                            <p class="course">Doctorado en historia, 2020</p>
+                                            <p class="institution">El Colegio de Michoacán [Méx]</p>
+                                        </div>
+                                    </li>
+                                    <li><i class="fa-li fas fa-graduation-cap"></i>
+                                        <div class="description">
+                                            <p class="course">Maestría en historia, 2012</p>
+                                            <p class="institution">Universidad Industrial de Santander [Col]</p>
+                                        </div>
+                                    </li>
+                                    <li><i class="fa-li fas fa-graduation-cap"></i>
+                                        <div class="description">
+                                            <p class="course">Historiador, 2009</p>
+                                            <p class="institution">Universidad Industrial de Santander [Col]</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-		<div class="container" id="titulo"><h1>::JAMF :: Página personal ::</h1></div>
+                <section class="colorlib-blog" data-section="publicaciones">
+                	<div class="colorlib-narrow-content">
+	                	<div class="row">
+	                		<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+	                                <span class="heading-meta">&nbsp;</span>
+	                                <h2 class="colorlib-heading animate-box">Publicaciones</h2>
+	                            </div>
+	                	</div>    
+	                	<div class="row">
+                			<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+							<div class="csl-bib-body">
 
+								<h3>Libro</h3>
 
-			<div class="container">
-				<h2>Fase 2 :D</h2>
-				<p>Una buena manera de dinamizar este sitio es añadiendo "proyectos", así que como me encuentro haciendo los mapas para mi proyecto de tesis, pues quedaría bien iniciar una página que aproveche las potencialidades de Leaflet, una librería de JavaScript para visualizar información geográfica.</p>
-				<p>El enlace es simplemente <a href="mapa.html">[mapa]</a></p>
-			</div>
+								<div class="csl-entry"><strong>Melo Flórez, Jairo Antonio</strong>. <i>Crimen y Castigo en Santander a inicios del Siglo XX</i>. Becas bicentenario. Bucaramanga: Gobernación de Santander, 2011.  <a href="files/beca_bicentenario.pdf" target="_blank">[Consultar]</a>.</div>
 
+								<h3 style="padding-top: 30px">Artículos</h3>
 
+							  <div class="csl-entry">Gayol, Víctor, y <strong>Jairo Antonio Melo Flórez</strong>. “Jurisdictional Culture and Memory Digitization of the ‘Government of Justice.’ Data Modeling and Digital Approach for the Legal History of Ibero-America”. <i>Culture &amp; History Digital Journal</i> 7, núm. 2 (2018): 017. <a href="https://doi.org/10.3989/chdj.2018.017" target="_blank">https://doi.org/10.3989/chdj.2018.017</a>.</div>
+							  
+							  <div class="csl-entry">Gayol, Víctor, y <strong>Jairo Antonio Melo Flórez</strong>. “Presente y perspectivas de las humanidades digitales en América Latina”. <i>Mélanges de la Casa de Velázquez</i> 47, núm. 2 (2017): 281–84. <a href="https://doi.org/10.4000/mcv.7907" target="_blank">https://doi.org/10.4000/mcv.7907</a>.</div>
+							  
+							  <div class="csl-entry">Gayol, Víctor, y <strong>Jairo Antonio Melo Flórez</strong>. <a href="https://www.researchgate.net/publication/321836344_Revistas_digitales_en_America_Latina_Historia_20_y_Relaciones_estudios_de_historia_y_sociedad_Dos_experiencias" target="_blank"> “Revistas digitales en América Latina: Historia 2.0 y Relaciones Estudios de Historia y Sociedad. Dos experiencias”</a>. <i>Atek Na</i>, núm. 6 (2017): 115–40.</div>
 
-			<div class="container">
-				<h2>{Desde 0 hasta n}</h2>
-				<p>¡Hola!<br \> Este sitio es mi página personal. En primer lugar es un espacio para compartir parte de mi trabajo y experiencias. Básicamente es un reto personal para construir un sitio funcional, atractivo, personalizado, y que pueda en un momento ser de utilidad para otros.</p>
-				<p>La idea de construir el sitio desde 0 tiene como propósito documentar la construcción de un sitio " a la antigüita"... pero en UTF-8 :p . También es mi intento por evitar usar Jekyll en Github pages, por lo que es posible que en cualquier momento abandone este proyecto :'D</p>
-				<p>Este es el <em>initial commit</em> así que no esperes mucho de este espacio :D</p>
-			</div>
-		</main>
-		<footer class="app-footer">
-			<div class="container" id="piedepag">
-				<i class="far fa-envelope"></i><i class="fas fa-blog"></i> <i class="fab fa-github"></i>
-			</div>
-		</footer>
-	</body>
-	</html>
+							  <div class="csl-entry"><strong>Melo Flórez, Jairo Antonio</strong>. “Lectura distante, fragmentada y colaborativa en el archivo infinito”. <i>Relaciones. Estudios de Historia y Sociedad</i> 38, núm. 149 (2017): 169–89.<a href="http://dx.doi.org/10.24901/rehs.v38i149.251" target="_blank">http://dx.doi.org/10.24901/rehs.v38i149.251</a>.</div>
+							  
+							  <div class="csl-entry"><strong>Melo Flórez, Jairo Antonio</strong>. “El indulto en el proceso de Independencia de la Nueva Granada, 1808-1821”. <i>Revista Historia y Justicia</i>, núm. 6 (2016). <a href="https://doi.org/10.4000/rhj.612" target="_blank">https://doi.org/10.4000/rhj.612</a>.</div>
+
+							  <div class="csl-entry"><strong>Melo Flórez, Jairo Antonio</strong>. “Justicia, abogados y criminalidad en Santander (1902-1930)”. <i>Anuario Colombiano de Historia Social y de la Cultura</i> 40, núm. 1 (2013): 145–76.<a href="http://www.bdigital.unal.edu.co/37159/" target="_blank">http://www.bdigital.unal.edu.co/37159/</a>.</div>
+							  
+							  <div class="csl-entry"><strong>Melo Flórez, Jairo Antonio</strong>. “Historia digital: la memoria en el archivo infinito”. <i>Historia Crítica</i>, núm. 43 (2011): 82–103. <a href="https://doi.org/10.7440/histcrit43.2011.06" target="_blank">https://doi.org/10.7440/histcrit43.2011.06</a>.</div>							  
+							  
+							  <div class="csl-entry"><strong>Melo Flórez, Jairo Antonio</strong>. “Pasión y honor. Elementos culturales del homicidio en la provincia de Soto (Santander) de 1903 a 1930”. <i>Anuario de Historia Regional y de las Fronteras</i> 15, núm. 1 (2010). <a href="http://revistas.uis.edu.co/index.php/anuariohistoria/article/view/1405" target="_blank">http://revistas.uis.edu.co/index.php/anuariohistoria/article/view/1405</a>.</div>
+							 
+							  	<h3 style="padding-top: 30px">Artículo en obra colectiva</h3>
+
+							  	<div class="csl-entry"><strong>Melo Flórez, Jairo Antonio</strong>. “El homicidio en la Provincia de Soto 1903 - 1930”. En <a href="http://edicionesuis.com/eu/index.php/perspectivas-historicas-sobre-la-criminalidad-y-los-conflictos-sociales-en-bucaramanga-siglo-xx#resumen-2" target="_blank"><i>Perspectivas históricas sobre la criminalidad y los conflictos sociales en Bucaramanga, siglo XX</i></a>, editado por René Alvarez Orozco y Natalia Ramírez Ocampo, 63–107. Colección Escuela de Historia, 25 años 4. Bucaramanga: Universidad Industrial de Santander, Dirección Cultural, 2013.</div>
+
+							  	<h3 style="padding-top: 30px">Reseñas</h3>
+
+							  	<div class="csl-entry"><strong>Melo Flórez, Jairo Antonio</strong>. “Reseña de Steven Pinker. The Better Angels of Our Nature. Why violence has declined. VikingAdult, New York, 2011, 832 p.”. <i>Historia 2.0. Conocimiento histórico en clave digital</i>, núm. 2 (2012): 229-234. <a href="files/reseña_2.pdf" target="_blank">[Consultar]</a>.</div>
+
+							  	<div class="csl-entry">———. “Reseña de Rosenzweig, Roy. Clio wired: the future of past in the digital age. New York: Columbia University Press, 2011, 309 p.”. <i>Historia 2.0. Conocimiento histórico en clave digital</i>, núm. 1 (2011): 131-134. <a href="files/reseña_1.pdf" target="_blank">[Consultar]</a>.</div>
+
+							  	<h3 style="padding-top: 30px">Tesis</h3>
+
+							  	<div class="csl-entry"><strong>Melo Flórez, Jairo Antonio</strong>. “El perdón en la justicia y el gobierno de la monarquía hispánica. El virreinato del Nuevo Reino de Granada, 1739-1808”. Tesis de doctorado, El Colegio de Michoacán, 2020.</div>
+
+							  	<div class="csl-entry">———. “Organización de la administración de justicia penal en Santander de 1886 a 1930”. Tesis de Maestría, Universidad Industrial de Santander, 2012.</div>
+
+							  	<div class="csl-entry">———. “El homicidio en la provincia de Soto 1903-1930”. Tesis de grado, Universidad Industrial de Santander, 2009.</div>
+
+							</div>
+                			</div>
+                		</div>            		
+                	</div>
+                </section>
+
+                <section class="colorlib-blog" data-section="blog">
+                    <div class="colorlib-narrow-content">
+                        <div class="row">
+                            <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+                                <span class="heading-meta">&nbsp;</span>
+                                <h2 class="colorlib-heading">Historia, crimen y justicia</h2>
+                            </div>
+                        </div>
+                        <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+                            <p>Desde agosto de 2015 he publicado algunos bosquejos relacionados con la historia de la justicia, el crimen, el perdón y el castigo. Algunos de los textos han sido revisados por colegas y profesores, pero todos pueden ser considerados "literatura gris". En un comienzo publiqué las entregas que realicé para los trabajos finales de los cursos de doctorado. Desde hace algún tiempo, comparto algunos escritos que no fueron introducidos en mi tesis doctoral o textos de ponencias que no están incluidas en publicaciones formales.</p>
+                            <p>Las últimas entradas del blog son las siguientes:</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="timeline-centered">
+                                    <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+                                        <div class="timeline-entry-inner">
+                                            <div class="timeline-icon color-1">
+                                                <i class="fas fa-rss"></i>
+                                            </div>
+                                            <div class="timeline-label" id="hypotheses_feed"></div>
+                                        </div>
+                                    </article>
+                                    <article class="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
+                                        <div class="timeline-entry-inner">
+                                            <div class="timeline-icon color-none">
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 animate-box fadeInUp animated">
+                                <p><a href="https://hccj.hypotheses.org/" class="btn btn-primary btn-lg btn-load-more" target="_blank">Visitar el blog en Hypotheses <i class="fas fa-external-link-alt"></i></a></p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="colorlib-contact" data-section="contact">
+                    <div class="colorlib-narrow-content">
+                        <div class="row">
+                            <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+                                <span class="heading-meta">&nbsp;</span>
+                                <h2 class="colorlib-heading">Contacto</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
+                                    <div class="colorlib-icon">
+                                        <i class="fas fa-at"></i>
+                                    </div>
+                                    <div class="colorlib-text">
+                                        <p><a href="mailto:jairom@colmich.edu.mx">jairom[@]colmich.edu.mx</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-7 col-md-push-1">
+                                <div class="row">
+                                    <div class="col-md-10 col-md-offset-1 col-md-pull-1 animate-box" data-animate-effect="fadeInRight">
+                                        <form name="input" method="POST" action="https://formspree.io/xeqelqbn">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" placeholder="Nombre" name="nombre">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" placeholder="Email" name="mail">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" placeholder="Asunto" name="subject">
+                                            </div>
+                                            <div class="form-group">
+                                                <textarea id="message" cols="30" rows="7" class="form-control" placeholder="Texto del mensaje" name="mensaje"></textarea>
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="submit" class="btn btn-primary btn-send-message" value="Enviar">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div><!-- end:colorlib-main -->
+        </div><!-- end:container-wrap -->
+    </div><!-- end:colorlib-page -->
+    <!-- Feed del blog hypotheses -->
+    <script type="text/javascript">
+    $('#hypotheses_feed').FeedEk({
+        FeedUrl: 'https://hccj.hypotheses.org/feed',
+        MaxCount: 5,
+        ShowDesc: true,
+        ShowPubDate: true,
+        DescCharacterLimit: 500,
+        TitleLinkTarget: '_blank',
+    });
+    </script>
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <!-- jQuery Easing -->
+    <script src="js/jquery.easing.1.3.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Waypoints -->
+    <script src="js/jquery.waypoints.min.js"></script>
+    <!-- Counters -->
+    <script src="js/jquery.countTo.js"></script>
+    <!-- MAIN JS -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
