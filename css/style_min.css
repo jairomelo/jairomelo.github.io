@@ -699,3 +699,11 @@ figure {
   font-family: "Playfair Display", Georgia, serif;
   margin: 0 0 30px 0; 
 }
+
+/* Estilo del micrositio Tutoriales */
+
+.footnotes {
+  font-size: 12px;
+  font-family: "Playfair Display", Georgia, serif;
+  color: rgba(0, 0, 0, 0.7);
+}
