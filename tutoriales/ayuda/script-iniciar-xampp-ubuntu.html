@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Script para iniciar XAMPP con cada reinicio en Ubuntu. – Jairo Antonio Melo Flórez – Historiador. Historia de la justicia, crimen y perdón. &#35;HistoriaDigital</title>
+
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="Historiador. Historia de la justicia, crimen y perdón. &#35;HistoriaDigital">
+    <meta property="og:description" content="Historiador. Historia de la justicia, crimen y perdón. &#35;HistoriaDigital" />
+    
+    <meta name="author" content="Jairo Antonio Melo Flórez" />
+
+    
+    <meta property="og:title" content="Script para iniciar XAMPP con cada reinicio en Ubuntu." />
+    <meta property="twitter:title" content="Script para iniciar XAMPP con cada reinicio en Ubuntu." />
+    
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Jairo Antonio Melo Flórez - Historiador. Historia de la justicia, crimen y perdón. &#35;HistoriaDigital" href="/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="https://avatars0.githubusercontent.com/u/7632991?s=400&u=e2a4945434202591067933fdb779869a83cdb715&v=4" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">Jairo Antonio Melo Flórez</a></h1>
+            <p class="site-description">Historiador. Historia de la justicia, crimen y perdón. &#35;HistoriaDigital</p>
+          </div>
+
+          <nav>
+            <a href="/">Blog</a>
+            <a href="/about">Acerca de</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <article class="page">
+
+  <h1>Script para iniciar XAMPP con cada reinicio en Ubuntu.</h1>
+
+  <div class="entry">
+    <p>Estas instrucciones pretenden acompañar un tutorial que se encuentra en edición para el sitio <a href="https://programminghistorian.org/es/" target="_blank">Programming Historian en Español</a> y están basadas en el tutorial publicado por <a href="https://www.computernetworkingnotes.com/ubuntu-linux-tutorials/how-to-start-xampp-automatically-in-ubuntu-linux.html" target="_blank">Computer Networking Notes</a>.</p>
+
+<p>Después de instalar XAMPP en Linux puedes iniciar la máquina virtual de manera manual con el siguiente comando:</p>
+
+<p><code class="highlighter-rouge">$sudo /opt/lampp/lampp start</code></p>
+
+<p>Si deseas, en cambio, que XAMPP se ejecute desde el inicio es necesario crear un <em>script</em>. Para ello sólo necesitas seguir estos pasos:</p>
+
+<ul>
+  <li>Ejecuta el siguiente comando en tu terminal para abrir el editor ““gedit:</li>
+</ul>
+
+<p><code class="highlighter-rouge">sudo gedit /etc/init.d/lampp</code></p>
+
+<ul>
+  <li>En gedit, escribe el siguiente programa <sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>:</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
+<span class="c">### BEGIN INIT INFO</span>
+<span class="c"># Provides: lampp</span>
+<span class="c"># Required-Start:    $local_fs $syslog $remote_fs dbus</span>
+<span class="c"># Required-Stop:     $local_fs $syslog $remote_fs</span>
+<span class="c"># Default-Start:     2 3 4 5</span>
+<span class="c"># Default-Stop:      0 1 6</span>
+<span class="c"># Short-Description: Start lampp</span>
+<span class="c">### END INIT INFO</span>
+/opt/lampp/lampp start
+</code></pre></div></div>
+
+<ul>
+  <li>Siguiente paso, hacemos ejecutable el <em>script</em>:</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ls –l /etc/init.d/lampp
+$sudo chmod +x /etc/init.d/lampp
+$ls –l /etc/init.d/lampp
+</code></pre></div></div>
+
+<ul>
+  <li>Hacemos que Ubuntu ejecute de manera predeterminada el <em>script</em>:</li>
+</ul>
+
+<p><code class="highlighter-rouge">$sudo update-rc.d lampp defaults</code></p>
+
+<p>¡Y listo!</p>
+
+<p>Para comprobar que el <em>script</em> funciona correctamente, sólo debemos reiniciar el sistema y ejecutar el siguiente comando:</p>
+
+<p><code class="highlighter-rouge">$systemctl list-units --type service |grep lampp</code></p>
+
+<p>Deberá aparecer el mensaje <code class="highlighter-rouge">lampp.service     loaded active running LSB: Start lampp</code></p>
+
+<p>También puedes abrir <a href="http://localhost">http://localhost</a> en tu navegador y verificar que se carga.</p>
+
+<h2 id="notas">Notas</h2>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>Es posible que mientras escribas el <em>script</em> se muestren algunos mensajes de advertencia (**gedit:3265 ….) Estos no tienen ningún efecto en el resultado final, así que puedes ignorarlos, o actualizar el sistema :p . <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+  </div>
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          
+
+
+
+<a href="https://github.com/jairomelo"><i class="svg-icon github"></i></a>
+
+
+
+<a href="/feed.xml"><i class="svg-icon rss"></i></a>
+<a href="https://www.twitter.com/jairoamelo"><i class="svg-icon twitter"></i></a>
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+  </body>
+</html>
