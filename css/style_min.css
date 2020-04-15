@@ -261,7 +261,7 @@ figure {
 
 .colorlib-heading {
   font-size: 18px;
-  margin-bottom: 4em;
+  /*margin-bottom: 4em;*/
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -697,7 +697,8 @@ figure {
 .csl-bib-body h3 {
   font-size: 18px;
   font-family: "Playfair Display", Georgia, serif;
-  margin: 0 0 30px 0; 
+  margin: 0 0 30px 0;
+  padding-top: 30px;
 }
 
 /* Estilo del micrositio Tutoriales */
