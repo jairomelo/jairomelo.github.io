@@ -1,0 +1,26 @@
+
+body {
+	font-family: Georgia, serif;
+}
+
+.produccion {
+	padding: 10px;
+}
+
+.produccion h2 {
+	color: rgba(21,28,35,0.7);
+	padding: 10px;
+}
+
+.produccion h3 {
+	color: rgba(0,0,0,0.7);
+	padding: 10px;
+}
+
+.items {
+	padding: 10px;
+}
+
+.libros {
+	padding: 10px;
+}

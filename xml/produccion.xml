@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Exported from Zotero</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>unpublished</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Generated from Zotero database</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader><text>
+
+        <body>
+            <listBibl>
+                <biblStruct type="bookSection" xml:id="Alvarez_Orozco2013" corresp="http://zotero.org/users/163570/items/P9TKRF3U">
+                    <analytic>
+                        <title level="a">El homicidio en la Provincia de Soto 1903 - 1930</title>
+                        <author>
+                            <forename>Jairo Antonio</forename>
+                            <surname>Melo Flórez</surname>
+                        </author>
+                    </analytic>
+                    <monogr>
+                        <title level="m">Perspectivas históricas sobre la criminalidad y los conflictos sociales en Bucaramanga, siglo XX</title>
+                        <idno type="ISBN">978-958-8777-41-2</idno>
+                        <editor>
+                            <forename>René</forename>
+                            <surname>Alvarez Orozco</surname>
+                        </editor>
+                        <editor>
+                            <forename>Natalia</forename>
+                            <surname>Ramírez Ocampo</surname>
+                        </editor>
+                        <imprint>
+                            <pubPlace>Bucaramanga</pubPlace>
+                            <biblScope unit="page">63-107</biblScope>
+                            <publisher>Universidad Industrial de Santander, Dirección Cultural</publisher>
+                            <date>2013</date>
+                        </imprint>
+                    </monogr>
+                    <series>
+                        <title level="s">Colección Escuela de Historia, 25 años</title>
+                        <biblScope unit="volume">4</biblScope>
+                    </series>
+                </biblStruct>
+                <biblStruct type="journalArticle" xml:id="Melo_Flórez2011a" corresp="http://zotero.org/users/163570/items/9VSFXBJM">
+                    <analytic>
+                        <title level="a">Historia digital: la memoria en el archivo infinito</title>
+                        <idno type="DOI">10.7440/histcrit43.2011.06</idno>
+                        <title type="short">Historia digital</title>
+                        <author>
+                            <forename>Jairo Antonio</forename>
+                            <surname>Melo Flórez</surname>
+                        </author>
+                    </analytic>
+                    <monogr>
+                        <title level="j">Historia Crítica</title>
+                        <idno type="ISSN">01211617, 19006152</idno>
+                        <imprint>
+                            <biblScope unit="issue">43</biblScope>
+                            <biblScope unit="page">82-103</biblScope>
+                            <date>2011</date>
+                            <note type="accessed">2015-07-28T23:07:11Z</note>
+                            <note type="url">http://historiacritica.uniandes.edu.co/view.php/694/index.php?id=694</note>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+                <biblStruct type="journalArticle" xml:id="Melo_Flórez2010" corresp="http://zotero.org/users/163570/items/W9TQGMQ2">
+                    <analytic>
+                        <title level="a">Pasión y honor. Elementos culturales del homicidio en la provincia de Soto (Santander) de 1903 a 1930</title>
+                        <author>
+                            <forename>Jairo Antonio</forename>
+                            <surname>Melo Flórez</surname>
+                        </author>
+                    </analytic>
+                    <monogr>
+                        <title level="j">Anuario de Historia Regional y de las Fronteras</title>
+                        <idno type="ISSN">2145-8499</idno>
+                        <imprint>
+                            <biblScope unit="volume">15</biblScope>
+                            <biblScope unit="issue">1</biblScope>
+                            <biblScope unit="page">245-264</biblScope>
+                            <date>2010</date>
+                            <note type="accessed">2015-07-28T23:06:05Z</note>
+                            <note type="url">http://revistas.uis.edu.co/index.php/anuariohistoria/article/view/1405</note>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+                <biblStruct type="book" xml:id="Melo_Flórez2011b" corresp="http://zotero.org/users/163570/items/FFG9KCKJ">
+                    <monogr>
+                        <title level="m">Crimen y Castigo en Santander a inicios del Siglo XX</title>
+                        <idno type="ISBN">978-958-44-9700-0</idno>
+                        <author>
+                            <forename>Jairo Antonio</forename>
+                            <surname>Melo Flórez</surname>
+                        </author>
+                        <imprint>
+                            <pubPlace>Bucaramanga</pubPlace>
+                            <publisher>Gobernación de Santander</publisher>
+                            <date>2011</date>
+                            <note type="accessed">2015-07-28T23:00:22Z</note>
+                            <note type="url">https://www.academia.edu/1153298/Crimen_y_Castigo_en_Santander_a_inicios_del_Siglo_XX</note>
+                        </imprint>
+                    </monogr>
+                    <series>
+                        <title level="s">Becas bicentenario</title>
+                    </series>
+                </biblStruct>
+                <biblStruct type="thesis" xml:id="Melo_Flórez2012" corresp="http://zotero.org/users/163570/items/N53I2T66">
+                    <monogr>
+                        <title level="m">Organización de la administración de justicia penal en Santander de 1886 a 1930</title>
+                        <author>
+                            <forename>Jairo Antonio</forename>
+                            <surname>Melo Flórez</surname>
+                        </author>
+                        <respStmt>
+                            <resp>contributor</resp>
+                            <persName>
+                                <forename>Armando</forename>
+                                <surname>Martínez Garnica</surname>
+                            </persName>
+                        </respStmt>
+                        <imprint>
+                            <pubPlace>Bucaramanga</pubPlace>
+                            <date>2012</date>
+                            <note type="thesisType">Tesis de Maestría</note>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+                <biblStruct type="journalArticle" xml:id="Melo_Flórez2013" corresp="http://zotero.org/users/163570/items/PMWEPWDS">
+                    <analytic>
+                        <title level="a">Justicia, abogados y criminalidad en Santander (1902-1930)</title>
+                        <author>
+                            <forename>Jairo Antonio</forename>
+                            <surname>Melo Flórez</surname>
+                        </author>
+                    </analytic>
+                    <monogr>
+                        <title level="j">Anuario Colombiano de Historia Social y de la Cultura</title>
+                        <imprint>
+                            <biblScope unit="volume">40</biblScope>
+                            <biblScope unit="issue">1</biblScope>
+                            <biblScope unit="page">145-176</biblScope>
+                            <date>2013</date>
+                            <note type="accessed">2015-07-28T23:08:37Z</note>
+                            <note type="url">http://www.revistas.unal.edu.co/index.php/achsc/article/view/38767/40758</note>
+                        </imprint>
+                    </monogr>
+                    <note type="tags">
+                        <note type="tag">poder judicial</note>
+                        <note type="tag">abogados</note>
+                        <note type="tag">criminalidad</note>
+                        <note type="tag">criminología</note>
+                        <note type="tag">impunidad</note>
+                        <note type="tag">Santander</note>
+                    </note>
+                </biblStruct>
+                <biblStruct type="journalArticle" xml:id="Melo_Flórez2017" corresp="http://zotero.org/users/163570/items/MW2K4TAI">
+                    <analytic>
+                        <title level="a">Lectura distante, fragmentada y colaborativa en el archivo infinito</title>
+                        <idno type="DOI">http://dx.doi.org/10.24901/rehs.v38i149.251</idno>
+                        <author>
+                            <forename>Jairo Antonio</forename>
+                            <surname>Melo Flórez</surname>
+                        </author>
+                    </analytic>
+                    <monogr>
+                        <title level="j">Relaciones. Estudios de Historia y Sociedad</title>
+                        <idno type="ISSN">2448-7554</idno>
+                        <imprint>
+                            <biblScope unit="volume">38</biblScope>
+                            <biblScope unit="issue">149</biblScope>
+                            <biblScope unit="page">169-189</biblScope>
+                            <date>2017</date>
+                            <note type="accessed">2017-03-21T00:57:05Z</note>
+                            <note type="url">http://www.revistarelaciones.com/index.php/relaciones/article/view/251</note>
+                        </imprint>
+                    </monogr>
+                    <note type="tags">
+                        <note type="tag">information</note>
+                        <note type="tag">análisis de textos</note>
+                        <note type="tag">analyse de textes</note>
+                        <note type="tag">data</note>
+                        <note type="tag">datos</note>
+                        <note type="tag">digital humanities</note>
+                        <note type="tag">données</note>
+                        <note type="tag">humanidades digitales</note>
+                        <note type="tag">información</note>
+                        <note type="tag">lectura</note>
+                        <note type="tag">lecture</note>
+                        <note type="tag">Reading</note>
+                        <note type="tag">text-analysis</note>
+                        <note type="tag">univers digitalisés</note>
+                    </note>
+                </biblStruct>
+                <biblStruct type="journalArticle" xml:id="Melo_Flórez2016" corresp="http://zotero.org/users/163570/items/TBH68U8M">
+                    <analytic>
+                        <title level="a">El indulto en el proceso de Independencia de la Nueva Granada, 1808-1821</title>
+                        <idno type="DOI">10.4000/rhj.612</idno>
+                        <author>
+                            <forename>Jairo Antonio</forename>
+                            <surname>Melo Flórez</surname>
+                        </author>
+                    </analytic>
+                    <monogr>
+                        <title level="j">Revista Historia y Justicia</title>
+                        <idno type="ISSN">0719-4153</idno>
+                        <imprint>
+                            <biblScope unit="issue">6</biblScope>
+                            <biblScope unit="page">228-257</biblScope>
+                            <date>2016</date>
+                            <note type="accessed">2017-06-26T16:50:33Z</note>
+                            <note type="url">http://rhj.revues.org/612</note>
+                        </imprint>
+                    </monogr>
+                    <note type="tags">
+                        <note type="tag">administración de justicia</note>
+                        <note type="tag">Colombia</note>
+                        <note type="tag">Independencia</note>
+                        <note type="tag">Nuevo Reino de Granada</note>
+                        <note type="tag">perdón</note>
+                    </note>
+                </biblStruct>
+                <biblStruct type="thesis" xml:id="Melo_Flórez2009" corresp="http://zotero.org/users/163570/items/976RGHWF">
+                    <monogr>
+                        <title level="m">El homicidio en la provincia de Soto 1903-1930</title>
+                        <author>
+                            <forename>Jairo Antonio</forename>
+                            <surname>Melo Flórez</surname>
+                        </author>
+                        <respStmt>
+                            <resp>contributor</resp>
+                            <persName>
+                                <forename>William</forename>
+                                <surname>Buendía Acevedo</surname>
+                            </persName>
+                        </respStmt>
+                        <imprint>
+                            <pubPlace>Bucaramanga</pubPlace>
+                            <date>2009</date>
+                            <note type="thesisType">Tesis de grado</note>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+                <biblStruct type="journalArticle" xml:id="Gayol2017a" corresp="http://zotero.org/users/163570/items/EHGV5WAA">
+                    <analytic>
+                        <title level="a">Presente y perspectivas de las humanidades digitales en América Latina</title>
+                        <author>
+                            <forename>Víctor</forename>
+                            <surname>Gayol</surname>
+                        </author>
+                        <author>
+                            <forename>Jairo Antonio</forename>
+                            <surname>Melo Flórez</surname>
+                        </author>
+                    </analytic>
+                    <monogr>
+                        <title level="j">Mélanges de la Casa de Velázquez</title>
+                        <idno type="ISSN">0076-230X</idno>
+                        <imprint>
+                            <biblScope unit="volume">47</biblScope>
+                            <biblScope unit="issue">2</biblScope>
+                            <biblScope unit="page">281-284</biblScope>
+                            <date>2017</date>
+                            <note type="accessed">2017-12-12T18:46:48Z</note>
+                            <note type="url">https://www.cairn.info/revue-melanges-de-la-casa-de-velazquez-2017-2-page-281.htm</note>
+                        </imprint>
+                    </monogr>
+                    <note type="tags">
+                        <note type="tag">Amérique Latine</note>
+                        <note type="tag">Humanités numériques</note>
+                        <note type="tag">limites et perspectives</note>
+                    </note>
+                </biblStruct>
+                <biblStruct type="journalArticle" xml:id="Gayol2017b" corresp="http://zotero.org/users/163570/items/VYVIY2RF">
+                    <analytic>
+                        <title level="a">Revistas digitales en América Latina: Historia 2.0 y Relaciones Estudios de Historia y Sociedad. Dos experiencias</title>
+                        <author>
+                            <forename>Víctor</forename>
+                            <surname>Gayol</surname>
+                        </author>
+                        <author>
+                            <forename>Jairo Antonio</forename>
+                            <surname>Melo Flórez</surname>
+                        </author>
+                    </analytic>
+                    <monogr>
+                        <title level="j">Atek Na</title>
+                        <idno type="ISSN">16681479, 24226726</idno>
+                        <imprint>
+                            <biblScope unit="issue">6</biblScope>
+                            <biblScope unit="page">115-140</biblScope>
+                            <date>2017</date>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+                <biblStruct type="journalArticle" xml:id="Gayol2018" corresp="http://zotero.org/users/163570/items/HJM94S3H">
+                    <analytic>
+                        <title level="a">Jurisdictional Culture and Memory Digitization of the “Government of Justice.” Data Modeling and Digital Approach for the Legal History of Ibero-America</title>
+                        <idno type="DOI">10.3989/chdj.2018.017</idno>
+                        <author>
+                            <forename>Víctor</forename>
+                            <surname>Gayol</surname>
+                        </author>
+                        <author>
+                            <forename>Jairo Antonio</forename>
+                            <surname>Melo Flórez</surname>
+                        </author>
+                    </analytic>
+                    <monogr>
+                        <title level="j">Culture &amp; History Digital Journal</title>
+                        <idno type="ISSN">2253-797X</idno>
+                        <imprint>
+                            <biblScope unit="volume">7</biblScope>
+                            <biblScope unit="issue">2</biblScope>
+                            <biblScope unit="page">017</biblScope>
+                            <date>2018</date>
+                            <note type="accessed">2019-02-01T05:01:57Z</note>
+                            <note type="url">http://cultureandhistory.revistas.csic.es/index.php/cultureandhistory/article/view/145</note>
+                        </imprint>
+                    </monogr>
+                    <note type="tags">
+                        <note type="tag">Historia digital</note>
+                        <note type="tag">Web semántica</note>
+                        <note type="tag">Digitalización</note>
+                        <note type="tag">Distant reading</note>
+                        <note type="tag">Digitization</note>
+                        <note type="tag">Critical legal history</note>
+                        <note type="tag">Derecho indiano</note>
+                        <note type="tag">Digital History</note>
+                        <note type="tag">Historia crítica del derecho</note>
+                        <note type="tag">Judiciary tradition</note>
+                        <note type="tag">Lectura distante</note>
+                        <note type="tag">Monarquía Hispana</note>
+                        <note type="tag">Spanish colonial law</note>
+                        <note type="tag">Tradición judicial</note>
+                        <note type="tag">Web semantic</note>
+                    </note>
+                </biblStruct>
+                <biblStruct type="conferencePaper" xml:id="Melo_Flórez2018" corresp="http://zotero.org/users/163570/items/G4L3WE6F">
+                    <analytic>
+                        <title level="a">Segmentación, modelado y visualización de fuentes históricas para el estudio del perdón en el Nuevo Reino de Granada del siglo XVIII</title>
+                        <title type="short">Segmentación, modelado y visualización</title>
+                        <author>
+                            <forename>Jairo Antonio</forename>
+                            <surname>Melo Flórez</surname>
+                        </author>
+                    </analytic>
+                    <monogr>
+                        <title level="m">Abstracts</title>
+                        <title type="conferenceName">DH2018</title>
+                        <imprint>
+                            <pubPlace>México</pubPlace>
+                            <date>2018</date>
+                            <note type="url">https://dh2018.adho.org/segmentacion-modelado-y-visualizacion-de-fuentes-historicas-para-el-estudio-del-perdon-en-el-nuevo-reino-de-granada-del-siglo-xviii/</note>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+            </listBibl>
+        </body>
+    </text>
+</TEI>
