@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Instalar un sistema de videoconferencia con Jitsi</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+<h1>Jitsi: documentación del proceso de construcción de un sistema de videoconferencia.</h1>
+
+<h2>Instalar Jitsi Meet en Google Cloud</h2>
+
+https://jochen.kirstaetter.name/install-jitsi-meet-on-gcp/
+
+<h2>Balanceador de carga horizontal</h2>
+
+https://github.com/jitsi/jitsi-meet/wiki/jitsi-meet-load-balancing-installation-Ubuntu-18.04-with-MUC-and-JID
+
+<h2>OCTO: <em>cascade bridges</em> para distribuir las conexiones</h2>
+
+<p>Como muchas cosas en Jitsi, OCTO es una estrategia sencilla para distribuir las conexiones entre múltiples instancias de JVB, pero la falta de documentación hace que sea de lo más oscuro. <br />
+Después de bastante rato dando vueltas por foros y una escasísima documentación, logré configurarlo.</p>
+
+<p>Primero, las fuentes de información.</p>
+<p>Para este ejercicio utilicé tres fuentes principalmente:</p>
+<ul>
+	<li>La "guía" de Jitsi <a href="https://github.com/jitsi/jitsi-videobridge/blob/master/doc/octo.md" target="_blank">"Setting up Octo (cascaded bridges)"</a></li>
+	<li>La entrada del foro de la comunidad de Jitsi: <a href="https://community.jitsi.org/t/octo-cascade-bridges-heres-how-full-guide/59253" target="_blank">"Octo Cascade Bridges - here’s how! FULL GUIDE"</a></li>
+	<li>La entrada del foro de la comunidad de Jitsi: <a href="https://community.jitsi.org/t/need-to-test-that-whether-its-working-or-not-after-enabling-octo-octo-configuration/53063" target="_blank">"Need to test that whether it’s working or not after enabling OCTO / OCTO configuration"</a></li>
+</ul>
+
+<p>Ahora sí, vamos con la configuración.</p>
+<p>Es importante que ya hayas creado los balanceadores de carga, pues ese sería el primer paso.</p>
+<p>El segundo paso consiste en configurar tanto el JVB "principal" (donde se encuentra instalado JMS) y los JVB de destino. Editemos primero el JVB principal. Requerimos añadir las siguientes propiedades al archivo <code>/etc/jitsi/videobridge/sip-communicator.properties</code>:</p>
+<code>
+	# la dirección local<br />
+	org.jitsi.videobridge.octo.BIND_ADDRESS=10.0.0.1<br />
+	# la ip pública<br />
+	org.jitsi.videobridge.octo.PUBLIC_ADDRESS=1.2.3.4<br />
+	#el puerto para unir ambas instancias<br />
+	org.jitsi.videobridge.octo.BIND_PORT=4096<br />
+	#un nombre para la región.<br />
+	org.jitsi.videobridge.REGION=region1<br />
+</code>
+
+<p><b>Muy importante</b>: No incluyas los comentarios en el código porque esto creará problemas. Tampoco dejes espacios en blanco después de cada línea.</p>
+
+<p>Repetimos el mismo paso para la instancia donde se encuentre el segundo JVB:</p>
+
+<code>
+org.jitsi.videobridge.octo.BIND_ADDRESS=3.2.6.1<br />
+org.jitsi.videobridge.octo.PUBLIC_ADDRESS=3.2.6.1<br />
+org.jitsi.videobridge.octo.BIND_PORT=4096<br />
+org.jitsi.videobridge.REGION=region2<br />
+</code>
+
+<p>Un punto de cuidado son las direcciones. Yo opté por una solución simple: usar la misma dirección para la BIND_ADDRESS y para la PUBLIC_ADDRESS, es decir, la ip externa. Técnicamente debería funcionar también con las ip internas, así que sería cuestión de probar la mejor solución.</p>
+
+<p>Posteriormente, necesitamos configurar Jicofo seleccionando la estrategia en <code>/etc/jitsi/jicofo/sip-communicator.properties</code></p>
+
+<h2>Jibri</h2>
+
+<p>Tutoriales: <a href="https://nerdonthestreet.com/wiki?find=Set+Up+Jibri+for+Jitsi+Recording%3Aslash%3AStreaming" target="_blank">Jibri Nerd on the street</a> </p>
+<p>Guía oficial: <a href="https://github.com/jitsi/jibri">https://github.com/jitsi/jibri</a></p>
+
+Notas: Para la instalación del repositorio seguir las indicaciones de la guía oficial:
+
+Jitsi Debian Repository
+The Jibri packages can be found in the stable repository on downloads.jitsi.org. First install the Jitsi repository key onto your system:
+
+wget -qO - https://download.jitsi.org/jitsi-key.gpg.key | sudo apt-key add -
+Create a sources.list.d file with the repository:
+
+sudo sh -c "echo 'deb https://download.jitsi.org stable/' > /etc/apt/sources.list.d/jitsi-stable.list"
+Update your package list:
+
+sudo apt-get update
+Install the latest jibri
+
+sudo apt-get install jibri
+
+
+**********
+El archivo de configuración cambió a /etc/jitsi/jibri/jibri.conf ¡y viene vacío!
+*********
+
+
+
+
+</body>
+</html>
